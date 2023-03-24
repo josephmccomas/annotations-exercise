@@ -5,7 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Author extends Person {
+    @SuppressWarnings("all")
+
     private List books;
+
+    @SuppressWarnings("all")
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
@@ -15,20 +19,25 @@ public class Author extends Person {
     /**
      * @deprecated Use publishedBooks instead
      */
+    @SuppressWarnings("all")
+
     @Deprecated
     public List<String> getBooks() {
         return books;
     }
+    @SuppressWarnings("all")
 
     public List<String> publishedBooks() {
         return books;
     }
+    @SuppressWarnings("all")
 
     public void addBook(String book) {
         books.add(book);
     }
-
+    @SuppressWarnings("all")
     @Override
+
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
